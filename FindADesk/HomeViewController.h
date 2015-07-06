@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HomeViewController.h
 //  FindADesk
 //
 //  Created by Lionel Lienafa on 12/05/2015.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "User.h"
 
-@interface ViewController : UIViewController
-
-
+@interface HomeViewController : UIViewController
+@property (strong, nonatomic) User *user;
 @end
 

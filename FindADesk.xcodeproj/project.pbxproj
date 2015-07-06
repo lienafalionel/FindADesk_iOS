@@ -7,13 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E20F21B01B2EC16B00F6B489 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F21AF1B2EC16B00F6B489 /* LoginViewController.m */; };
+		E20F21B31B2EC57B00F6B489 /* MyBookingsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F21B21B2EC57B00F6B489 /* MyBookingsListViewController.m */; };
+		E20F21B61B2ECCA000F6B489 /* AuthenticationService.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F21B51B2ECCA000F6B489 /* AuthenticationService.m */; };
+		E2285BC11B448EDB00EA9E02 /* FindLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2285BC01B448EDB00EA9E02 /* FindLocationViewController.m */; };
+		E2285BC41B44A3C900EA9E02 /* WorkspaceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2285BC31B44A3C900EA9E02 /* WorkspaceListViewController.m */; };
+		E23274B51B31B9AB0043245F /* Booking+JSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E23274B41B31B9AB0043245F /* Booking+JSONSerializer.m */; };
+		E237ED1A1B433D3D00A02C1B /* BookingService.m in Sources */ = {isa = PBXBuildFile; fileRef = E237ED191B433D3C00A02C1B /* BookingService.m */; };
+		E26869A11B0E716200801089 /* CardType.m in Sources */ = {isa = PBXBuildFile; fileRef = E26869A01B0E716200801089 /* CardType.m */; };
+		E26869A41B0E72F300801089 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E26869A31B0E72F300801089 /* User.m */; };
+		E26869A71B0E740800801089 /* Workspace.m in Sources */ = {isa = PBXBuildFile; fileRef = E26869A61B0E740800801089 /* Workspace.m */; };
+		E26869AB1B0E755100801089 /* Booking.m in Sources */ = {isa = PBXBuildFile; fileRef = E26869AA1B0E755100801089 /* Booking.m */; };
+		E26869AE1B0E77CB00801089 /* WorkspaceType.m in Sources */ = {isa = PBXBuildFile; fileRef = E26869AD1B0E77CB00801089 /* WorkspaceType.m */; };
+		E26869B11B0F990700801089 /* User+JSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E26869B01B0F990700801089 /* User+JSONSerializer.m */; };
+		E286D5B71B45E6980009B20E /* WorkspaceService.m in Sources */ = {isa = PBXBuildFile; fileRef = E286D5B61B45E6980009B20E /* WorkspaceService.m */; };
+		E286D5BA1B4983860009B20E /* WorkspaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E286D5B91B4983860009B20E /* WorkspaceViewController.m */; };
 		E2D9A1141B02477200AC80B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9A1131B02477200AC80B0 /* main.m */; };
 		E2D9A1171B02477200AC80B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9A1161B02477200AC80B0 /* AppDelegate.m */; };
-		E2D9A11A1B02477200AC80B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9A1191B02477200AC80B0 /* ViewController.m */; };
+		E2D9A11A1B02477200AC80B0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9A1191B02477200AC80B0 /* HomeViewController.m */; };
 		E2D9A11D1B02477200AC80B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D9A11B1B02477200AC80B0 /* Main.storyboard */; };
 		E2D9A11F1B02477200AC80B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D9A11E1B02477200AC80B0 /* Images.xcassets */; };
 		E2D9A1221B02477200AC80B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D9A1201B02477200AC80B0 /* LaunchScreen.xib */; };
 		E2D9A12E1B02477200AC80B0 /* FindADeskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9A12D1B02477200AC80B0 /* FindADeskTests.m */; };
+		E2ECEDE81B1D90F600B5A69A /* CardType+JSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2ECEDE71B1D90F600B5A69A /* CardType+JSONSerializer.m */; };
+		E2ECEDEB1B1D936B00B5A69A /* WorkspaceType+JSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2ECEDEA1B1D936B00B5A69A /* WorkspaceType+JSONSerializer.m */; };
+		E2F792181B1DEFFA00FB70A7 /* SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F792171B1DEFFA00FB70A7 /* SessionManager.m */; };
+		E2F7921B1B1DF10100FB70A7 /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F7921A1B1DF10100FB70A7 /* UserService.m */; };
+		E2FA4E361B15033000DADB6D /* Workspace+JSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FA4E351B15033000DADB6D /* Workspace+JSONSerializer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +47,59 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E20F21AE1B2EC16B00F6B489 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E20F21AF1B2EC16B00F6B489 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		E20F21B11B2EC57B00F6B489 /* MyBookingsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBookingsListViewController.h; sourceTree = "<group>"; };
+		E20F21B21B2EC57B00F6B489 /* MyBookingsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBookingsListViewController.m; sourceTree = "<group>"; };
+		E20F21B41B2ECCA000F6B489 /* AuthenticationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationService.h; sourceTree = "<group>"; };
+		E20F21B51B2ECCA000F6B489 /* AuthenticationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationService.m; sourceTree = "<group>"; };
+		E2285BBF1B448EDB00EA9E02 /* FindLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindLocationViewController.h; sourceTree = "<group>"; };
+		E2285BC01B448EDB00EA9E02 /* FindLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindLocationViewController.m; sourceTree = "<group>"; };
+		E2285BC21B44A3C900EA9E02 /* WorkspaceListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkspaceListViewController.h; sourceTree = "<group>"; };
+		E2285BC31B44A3C900EA9E02 /* WorkspaceListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkspaceListViewController.m; sourceTree = "<group>"; };
+		E23274B31B31B9AB0043245F /* Booking+JSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Booking+JSONSerializer.h"; sourceTree = "<group>"; };
+		E23274B41B31B9AB0043245F /* Booking+JSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Booking+JSONSerializer.m"; sourceTree = "<group>"; };
+		E237ED181B433D3C00A02C1B /* BookingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingService.h; sourceTree = "<group>"; };
+		E237ED191B433D3C00A02C1B /* BookingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingService.m; sourceTree = "<group>"; };
+		E268699F1B0E716200801089 /* CardType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardType.h; sourceTree = "<group>"; };
+		E26869A01B0E716200801089 /* CardType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardType.m; sourceTree = "<group>"; };
+		E26869A21B0E72F300801089 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		E26869A31B0E72F300801089 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		E26869A51B0E740800801089 /* Workspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Workspace.h; sourceTree = "<group>"; };
+		E26869A61B0E740800801089 /* Workspace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Workspace.m; sourceTree = "<group>"; };
+		E26869A91B0E755100801089 /* Booking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Booking.h; sourceTree = "<group>"; };
+		E26869AA1B0E755100801089 /* Booking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Booking.m; sourceTree = "<group>"; };
+		E26869AC1B0E77CB00801089 /* WorkspaceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkspaceType.h; sourceTree = "<group>"; };
+		E26869AD1B0E77CB00801089 /* WorkspaceType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkspaceType.m; sourceTree = "<group>"; };
+		E26869AF1B0F990700801089 /* User+JSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+JSONSerializer.h"; sourceTree = "<group>"; };
+		E26869B01B0F990700801089 /* User+JSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+JSONSerializer.m"; sourceTree = "<group>"; };
+		E286D5B51B45E6980009B20E /* WorkspaceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkspaceService.h; sourceTree = "<group>"; };
+		E286D5B61B45E6980009B20E /* WorkspaceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkspaceService.m; sourceTree = "<group>"; };
+		E286D5B81B4983860009B20E /* WorkspaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkspaceViewController.h; sourceTree = "<group>"; };
+		E286D5B91B4983860009B20E /* WorkspaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkspaceViewController.m; sourceTree = "<group>"; };
 		E2D9A10E1B02477200AC80B0 /* FindADesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindADesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D9A1121B02477200AC80B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2D9A1131B02477200AC80B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2D9A1151B02477200AC80B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E2D9A1161B02477200AC80B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E2D9A1181B02477200AC80B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E2D9A1191B02477200AC80B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E2D9A1181B02477200AC80B0 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		E2D9A1191B02477200AC80B0 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		E2D9A11C1B02477200AC80B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2D9A11E1B02477200AC80B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E2D9A1211B02477200AC80B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E2D9A1271B02477200AC80B0 /* FindADeskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindADeskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D9A12C1B02477200AC80B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2D9A12D1B02477200AC80B0 /* FindADeskTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindADeskTests.m; sourceTree = "<group>"; };
+		E2ECEDE61B1D90F600B5A69A /* CardType+JSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CardType+JSONSerializer.h"; sourceTree = "<group>"; };
+		E2ECEDE71B1D90F600B5A69A /* CardType+JSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CardType+JSONSerializer.m"; sourceTree = "<group>"; };
+		E2ECEDE91B1D936B00B5A69A /* WorkspaceType+JSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WorkspaceType+JSONSerializer.h"; sourceTree = "<group>"; };
+		E2ECEDEA1B1D936B00B5A69A /* WorkspaceType+JSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WorkspaceType+JSONSerializer.m"; sourceTree = "<group>"; };
+		E2F792161B1DEFFA00FB70A7 /* SessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionManager.h; sourceTree = "<group>"; };
+		E2F792171B1DEFFA00FB70A7 /* SessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionManager.m; sourceTree = "<group>"; };
+		E2F792191B1DF10100FB70A7 /* UserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
+		E2F7921A1B1DF10100FB70A7 /* UserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserService.m; sourceTree = "<group>"; };
+		E2FA4E341B15033000DADB6D /* Workspace+JSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Workspace+JSONSerializer.h"; sourceTree = "<group>"; };
+		E2FA4E351B15033000DADB6D /* Workspace+JSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Workspace+JSONSerializer.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +120,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E25B5E7D1B05EF14007A1019 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E26869A81B0E753600801089 /* Booking */,
+				E268699E1B0E6E4700801089 /* WorkspaceType */,
+				E268699D1B0E6E3600801089 /* Workspace */,
+				E268699C1B0E6E2800801089 /* User */,
+				E268699B1B0E6DFE00801089 /* CardType */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		E268699B1B0E6DFE00801089 /* CardType */ = {
+			isa = PBXGroup;
+			children = (
+				E268699F1B0E716200801089 /* CardType.h */,
+				E26869A01B0E716200801089 /* CardType.m */,
+				E2ECEDE61B1D90F600B5A69A /* CardType+JSONSerializer.h */,
+				E2ECEDE71B1D90F600B5A69A /* CardType+JSONSerializer.m */,
+			);
+			name = CardType;
+			sourceTree = "<group>";
+		};
+		E268699C1B0E6E2800801089 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				E26869A21B0E72F300801089 /* User.h */,
+				E26869A31B0E72F300801089 /* User.m */,
+				E26869AF1B0F990700801089 /* User+JSONSerializer.h */,
+				E26869B01B0F990700801089 /* User+JSONSerializer.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		E268699D1B0E6E3600801089 /* Workspace */ = {
+			isa = PBXGroup;
+			children = (
+				E26869A51B0E740800801089 /* Workspace.h */,
+				E26869A61B0E740800801089 /* Workspace.m */,
+				E2FA4E341B15033000DADB6D /* Workspace+JSONSerializer.h */,
+				E2FA4E351B15033000DADB6D /* Workspace+JSONSerializer.m */,
+			);
+			name = Workspace;
+			sourceTree = "<group>";
+		};
+		E268699E1B0E6E4700801089 /* WorkspaceType */ = {
+			isa = PBXGroup;
+			children = (
+				E26869AC1B0E77CB00801089 /* WorkspaceType.h */,
+				E26869AD1B0E77CB00801089 /* WorkspaceType.m */,
+				E2ECEDE91B1D936B00B5A69A /* WorkspaceType+JSONSerializer.h */,
+				E2ECEDEA1B1D936B00B5A69A /* WorkspaceType+JSONSerializer.m */,
+			);
+			name = WorkspaceType;
+			sourceTree = "<group>";
+		};
+		E26869A81B0E753600801089 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				E26869A91B0E755100801089 /* Booking.h */,
+				E26869AA1B0E755100801089 /* Booking.m */,
+				E23274B31B31B9AB0043245F /* Booking+JSONSerializer.h */,
+				E23274B41B31B9AB0043245F /* Booking+JSONSerializer.m */,
+			);
+			name = Booking;
+			sourceTree = "<group>";
+		};
 		E2D9A1051B02477200AC80B0 = {
 			isa = PBXGroup;
 			children = (
@@ -81,10 +208,11 @@
 		E2D9A1101B02477200AC80B0 /* FindADesk */ = {
 			isa = PBXGroup;
 			children = (
+				E2F792141B1DEF8D00FB70A7 /* services */,
+				E2F792131B1DE2DE00FB70A7 /* controllers */,
+				E25B5E7D1B05EF14007A1019 /* models */,
 				E2D9A1151B02477200AC80B0 /* AppDelegate.h */,
 				E2D9A1161B02477200AC80B0 /* AppDelegate.m */,
-				E2D9A1181B02477200AC80B0 /* ViewController.h */,
-				E2D9A1191B02477200AC80B0 /* ViewController.m */,
 				E2D9A11B1B02477200AC80B0 /* Main.storyboard */,
 				E2D9A11E1B02477200AC80B0 /* Images.xcassets */,
 				E2D9A1201B02477200AC80B0 /* LaunchScreen.xib */,
@@ -117,6 +245,50 @@
 				E2D9A12C1B02477200AC80B0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2F792131B1DE2DE00FB70A7 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E2D9A1191B02477200AC80B0 /* HomeViewController.m */,
+				E2D9A1181B02477200AC80B0 /* HomeViewController.h */,
+				E20F21AE1B2EC16B00F6B489 /* LoginViewController.h */,
+				E20F21AF1B2EC16B00F6B489 /* LoginViewController.m */,
+				E20F21B11B2EC57B00F6B489 /* MyBookingsListViewController.h */,
+				E20F21B21B2EC57B00F6B489 /* MyBookingsListViewController.m */,
+				E2285BBF1B448EDB00EA9E02 /* FindLocationViewController.h */,
+				E2285BC01B448EDB00EA9E02 /* FindLocationViewController.m */,
+				E2285BC21B44A3C900EA9E02 /* WorkspaceListViewController.h */,
+				E2285BC31B44A3C900EA9E02 /* WorkspaceListViewController.m */,
+				E286D5B81B4983860009B20E /* WorkspaceViewController.h */,
+				E286D5B91B4983860009B20E /* WorkspaceViewController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		E2F792141B1DEF8D00FB70A7 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				E2F792151B1DEFD300FB70A7 /* _core */,
+				E2F792191B1DF10100FB70A7 /* UserService.h */,
+				E2F7921A1B1DF10100FB70A7 /* UserService.m */,
+				E20F21B41B2ECCA000F6B489 /* AuthenticationService.h */,
+				E20F21B51B2ECCA000F6B489 /* AuthenticationService.m */,
+				E237ED181B433D3C00A02C1B /* BookingService.h */,
+				E237ED191B433D3C00A02C1B /* BookingService.m */,
+				E286D5B51B45E6980009B20E /* WorkspaceService.h */,
+				E286D5B61B45E6980009B20E /* WorkspaceService.m */,
+			);
+			name = services;
+			sourceTree = "<group>";
+		};
+		E2F792151B1DEFD300FB70A7 /* _core */ = {
+			isa = PBXGroup;
+			children = (
+				E2F792161B1DEFFA00FB70A7 /* SessionManager.h */,
+				E2F792171B1DEFFA00FB70A7 /* SessionManager.m */,
+			);
+			name = _core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +340,7 @@
 				TargetAttributes = {
 					E2D9A10D1B02477200AC80B0 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 8799JS9Z7H;
 					};
 					E2D9A1261B02477200AC80B0 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -219,9 +392,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2D9A11A1B02477200AC80B0 /* ViewController.m in Sources */,
+				E26869A41B0E72F300801089 /* User.m in Sources */,
+				E2D9A11A1B02477200AC80B0 /* HomeViewController.m in Sources */,
+				E2F7921B1B1DF10100FB70A7 /* UserService.m in Sources */,
+				E23274B51B31B9AB0043245F /* Booking+JSONSerializer.m in Sources */,
 				E2D9A1171B02477200AC80B0 /* AppDelegate.m in Sources */,
+				E286D5BA1B4983860009B20E /* WorkspaceViewController.m in Sources */,
+				E20F21B31B2EC57B00F6B489 /* MyBookingsListViewController.m in Sources */,
+				E2285BC41B44A3C900EA9E02 /* WorkspaceListViewController.m in Sources */,
+				E26869A11B0E716200801089 /* CardType.m in Sources */,
+				E20F21B61B2ECCA000F6B489 /* AuthenticationService.m in Sources */,
+				E20F21B01B2EC16B00F6B489 /* LoginViewController.m in Sources */,
+				E26869A71B0E740800801089 /* Workspace.m in Sources */,
+				E26869AB1B0E755100801089 /* Booking.m in Sources */,
 				E2D9A1141B02477200AC80B0 /* main.m in Sources */,
+				E237ED1A1B433D3D00A02C1B /* BookingService.m in Sources */,
+				E26869AE1B0E77CB00801089 /* WorkspaceType.m in Sources */,
+				E2FA4E361B15033000DADB6D /* Workspace+JSONSerializer.m in Sources */,
+				E2ECEDE81B1D90F600B5A69A /* CardType+JSONSerializer.m in Sources */,
+				E286D5B71B45E6980009B20E /* WorkspaceService.m in Sources */,
+				E2285BC11B448EDB00EA9E02 /* FindLocationViewController.m in Sources */,
+				E2F792181B1DEFFA00FB70A7 /* SessionManager.m in Sources */,
+				E2ECEDEB1B1D936B00B5A69A /* WorkspaceType+JSONSerializer.m in Sources */,
+				E26869B11B0F990700801089 /* User+JSONSerializer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +536,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FindADesk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +547,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FindADesk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +607,7 @@
 				E2D9A1331B02477200AC80B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2D9A1341B02477200AC80B0 /* Build configuration list for PBXNativeTarget "FindADeskTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +616,7 @@
 				E2D9A1361B02477200AC80B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
