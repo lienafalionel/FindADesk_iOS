@@ -42,14 +42,44 @@ static BookingService *sharedInstance = nil;
     }];
 }
 
+- (void)createBooking:(Booking *)booking completion:(void (^)(Booking *))completion{
+    NSString *url = @"/bookings";
+    NSDictionary *d = booking.toJSON;
+    [[SessionManager sharedInstance] POST:url data:booking.toJSON completion:^(NSDictionary *JSON) {
+        Booking *createdBooking = [Booking bookingFromJSON:JSON];
+        if(completion) completion(createdBooking);
+    }];
+}
+
+- (void)createbooking:(User *)user workspace:(Workspace *)workspace begin:(NSDate *)begin end:(NSDate *)end completion:(void (^)(Booking *))completion{
+    NSTimeInterval diff = [end timeIntervalSinceDate:begin];
+    int days = (diff / 86400) + 1;
+    double price = [workspace.price floatValue] * days;
+    
+    double dateBooking = [[NSDate date] timeIntervalSince1970] * 1000;
+    double dateBegin = [begin timeIntervalSince1970] * 1000;
+    double dateEnd = [end timeIntervalSince1970] * 1000;
+    NSString *url = [NSString stringWithFormat:@"/bookings/save/%@/%@/%f/%f/%f/%f", user.userId, workspace.workspaceId, dateBegin, dateEnd, dateBooking, price];
+    [[SessionManager sharedInstance] GET:url completion:^(NSDictionary * JSON) {
+        Booking *booking = [Booking bookingFromJSON:JSON];
+        if(completion) completion(booking);
+    }];
+}
+
 - (void)deleteBooking:(Booking *)booking completion:(void (^)(Booking *))completion{
-    NSString *url = [NSString stringWithFormat:@"/bookings/%@", booking.bookingId];
-    [[SessionManager sharedInstance] DELETE:url data:nil completion:^(NSDictionary * JSON) {
+    NSString *url = [NSString stringWithFormat:@"/bookings/delete/%@", booking.bookingId];
+    [[SessionManager sharedInstance] GET:url completion:^(NSDictionary *JSON) {
         Booking *deletedBooking = [Booking bookingFromJSON:JSON];
         if (completion) {
             completion(deletedBooking);
         }
     }];
+    /*[[SessionManager sharedInstance] GET:url data:nil completion:^(NSDictionary * JSON) {
+        Booking *deletedBooking = [Booking bookingFromJSON:JSON];
+        if (completion) {
+            completion(deletedBooking);
+        }
+    }];*/
 }
 
 @end

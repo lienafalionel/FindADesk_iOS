@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface WorkspaceType : NSObject
-@property (nonatomic, retain) NSNumber * id;
+@property (nonatomic, retain) NSNumber * workspaceTypeid;
 @property (nonatomic, retain) NSString * label;
 
 

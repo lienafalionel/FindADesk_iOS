@@ -10,11 +10,14 @@
 #import "AuthenticationService.h"
 #import "UserService.h"
 #import "HomeViewController.h"
+#import "BookingViewController.h"
 #import "User.h"
 #import "SessionManager.h"
 #import "User+JSONSerializer.h"
+#import "AppDelegate.h"
 
 #define SEGUE_TO_HOME       @"LoginToHome"
+#define SEGUE_TO_SUBSCRIBE  @"LoginToSubscribe"
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *fieldEmail;
@@ -43,16 +46,17 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)didTouchConnectionButton:(id)sender {
-    /*if([self.fieldEmail.text isEqualToString:@""] || [self.fieldPassword.text isEqualToString:@"" ])
-        return;*/
+    if([self.fieldEmail.text isEqualToString:@""] || [self.fieldPassword.text isEqualToString:@"" ])
+        return;
     
-    [self.userService getUserWithcompletion:@"1" completion:^(User *userFound) {
+    [self.userService getUserByMailAndPassword:self.fieldEmail.text password:self.fieldPassword.text completion:^(User *userFound) {
+        if(userFound.userId == nil)
+            return;
         self.user = userFound;
         dispatch_async(dispatch_get_main_queue(), ^{
             [self performSegueWithIdentifier:SEGUE_TO_HOME sender:nil];
         });
-        
-    }];    
+    }];
                  
     /*[self.authenticationService authenticateWithEmail:self.fieldEmail.text password:self.fieldPassword.text success:^{
         NSLog(@"Success");
@@ -61,6 +65,9 @@
         NSLog(@"erreur connexion");
     }];*/
 }
+- (IBAction)didTouchSubscribeButton:(id)sender {
+    [self performSegueWithIdentifier:SEGUE_TO_SUBSCRIBE sender:nil];
+}
 
 
 #pragma mark - Navigation
@@ -68,8 +75,7 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([segue.identifier isEqualToString:SEGUE_TO_HOME]){
-        HomeViewController *controller = segue.destinationViewController;
-        controller.user = self.user;
+        userConnected = self.user;
     }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.

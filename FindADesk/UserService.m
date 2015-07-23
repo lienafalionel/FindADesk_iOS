@@ -43,6 +43,14 @@ static UserService *sharedInstance = nil;
     }];
 }
 
+- (void)createUser:(NSString *)firstName lastName:(NSString *)lastName address:(NSString *)address email:(NSString *)email password:(NSString *)password phoneNumber:(NSString *)phoneNumber company:(NSString *)company completion:(void(^)(User *))completion{
+    NSString *url = [NSString stringWithFormat:@"/users/create/%@/%@/%@/%@/%@/%@/%@", firstName, lastName, address, email, password, phoneNumber, company];
+    [[SessionManager sharedInstance] GET:url completion:^(NSDictionary *JSON) {
+        User *createdUser = [User userFromJSON:JSON];
+        if(completion) completion(createdUser);
+    }];
+}
+
 - (void)updateUser:(User *)user completion:(void(^)(User *))completion{
     [[SessionManager sharedInstance] PUT:@"/users" data:@{@"user" : user.toJSON} completion:^(NSDictionary *JSON) {
         User *updatedUser = [User userFromJSON:JSON];
@@ -91,4 +99,11 @@ static UserService *sharedInstance = nil;
     }];
 }
 
+- (void)getUserByMailAndPassword:(NSString *)email password:(NSString *)password completion:(void (^)(User *))completion{
+    NSString *url = [NSString stringWithFormat:@"/users/%@/%@", email, password];
+    [[SessionManager sharedInstance] GET:url completion:^(NSDictionary *JSON) {
+        User *user = [User userFromJSON:JSON];
+        if(completion) completion(user);
+    }];
+}
 @end

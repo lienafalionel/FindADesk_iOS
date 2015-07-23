@@ -15,10 +15,11 @@
 + (instancetype)sharedInstance;
 
 - (void)createUser:(User *)user completion:(void(^)(User *))completion;
+- (void)createUser:(NSString *)firstName lastName:(NSString *)lastName address:(NSString *)address email:(NSString *)email password:(NSString *)password phoneNumber:(NSString *)phoneNumber company:(NSString *)company completion:(void(^)(User *))completion;
 - (void)updateUser:(User *)user completion:(void(^)(User *))completion;
 - (void)deleteUser:(User *)artist completion:(void(^)(User *))completion;
 - (void)getUserWithcompletion:(NSString *)name completion:(void (^)(User *))completion;
 - (void)getBookingsByUserWithcompletion:(NSNumber *)userId completion:(void (^)(NSArray *))completion;
 - (void)getUsersWithcompletion:(NSString *)name completion:(void (^)(NSArray *))completion;
-
+- (void)getUserByMailAndPassword:(NSString *)email password:(NSString *)password completion:(void (^)(User *))completion;
 @end

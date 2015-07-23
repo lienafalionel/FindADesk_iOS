@@ -14,5 +14,6 @@
 #pragma mark - Singleton Pattern
 + (instancetype)sharedInstance;
 
+- (void)getWorkspacesWithcompletion:(void (^)(NSArray *))completion;
 - (void)getWorkspacesByCriteriaWithcompletion:(NSNumber *)idWorkspaceType city:(NSString *)city seats:(NSNumber *)seats minPrice:(NSNumber *)minPrice maxPrice:(NSNumber *)maxPrice completion:(void (^)(NSArray *))completion;
 @end

@@ -24,7 +24,10 @@
 
 - (NSDictionary *)toJSON{
     NSMutableDictionary *json = [@{} mutableCopy];
-    
+    if(self.workspaceTypeid)
+        [json setObject:self.workspaceTypeid forKey:@"workspaceTypeId"];
+    if(self.label)
+        [json setObject:self.label forKey:@"label"];
     return json;
 }
 

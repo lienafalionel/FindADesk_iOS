@@ -13,7 +13,11 @@
 		E2285BC11B448EDB00EA9E02 /* FindLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2285BC01B448EDB00EA9E02 /* FindLocationViewController.m */; };
 		E2285BC41B44A3C900EA9E02 /* WorkspaceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2285BC31B44A3C900EA9E02 /* WorkspaceListViewController.m */; };
 		E23274B51B31B9AB0043245F /* Booking+JSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E23274B41B31B9AB0043245F /* Booking+JSONSerializer.m */; };
+		E234689B1B4C524200213ADC /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E234689A1B4C524200213ADC /* MapViewController.m */; };
+		E234689D1B4C543E00213ADC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E234689C1B4C543E00213ADC /* MapKit.framework */; };
 		E237ED1A1B433D3D00A02C1B /* BookingService.m in Sources */ = {isa = PBXBuildFile; fileRef = E237ED191B433D3C00A02C1B /* BookingService.m */; };
+		E241E6441B6099CF00105343 /* WorkspaceTypeService.m in Sources */ = {isa = PBXBuildFile; fileRef = E241E6431B6099CF00105343 /* WorkspaceTypeService.m */; };
+		E241E6471B60C71800105343 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E241E6461B60C71800105343 /* Annotation.m */; };
 		E26869A11B0E716200801089 /* CardType.m in Sources */ = {isa = PBXBuildFile; fileRef = E26869A01B0E716200801089 /* CardType.m */; };
 		E26869A41B0E72F300801089 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E26869A31B0E72F300801089 /* User.m */; };
 		E26869A71B0E740800801089 /* Workspace.m in Sources */ = {isa = PBXBuildFile; fileRef = E26869A61B0E740800801089 /* Workspace.m */; };
@@ -22,6 +26,8 @@
 		E26869B11B0F990700801089 /* User+JSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E26869B01B0F990700801089 /* User+JSONSerializer.m */; };
 		E286D5B71B45E6980009B20E /* WorkspaceService.m in Sources */ = {isa = PBXBuildFile; fileRef = E286D5B61B45E6980009B20E /* WorkspaceService.m */; };
 		E286D5BA1B4983860009B20E /* WorkspaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E286D5B91B4983860009B20E /* WorkspaceViewController.m */; };
+		E29C144F1B60184E00A8B439 /* SubscribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29C144E1B60184E00A8B439 /* SubscribeViewController.m */; };
+		E2BA369E1B4A9CD30055D985 /* BookingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BA369D1B4A9CD30055D985 /* BookingViewController.m */; };
 		E2D9A1141B02477200AC80B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9A1131B02477200AC80B0 /* main.m */; };
 		E2D9A1171B02477200AC80B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9A1161B02477200AC80B0 /* AppDelegate.m */; };
 		E2D9A11A1B02477200AC80B0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9A1191B02477200AC80B0 /* HomeViewController.m */; };
@@ -59,8 +65,15 @@
 		E2285BC31B44A3C900EA9E02 /* WorkspaceListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkspaceListViewController.m; sourceTree = "<group>"; };
 		E23274B31B31B9AB0043245F /* Booking+JSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Booking+JSONSerializer.h"; sourceTree = "<group>"; };
 		E23274B41B31B9AB0043245F /* Booking+JSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Booking+JSONSerializer.m"; sourceTree = "<group>"; };
+		E23468991B4C524200213ADC /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		E234689A1B4C524200213ADC /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		E234689C1B4C543E00213ADC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E237ED181B433D3C00A02C1B /* BookingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingService.h; sourceTree = "<group>"; };
 		E237ED191B433D3C00A02C1B /* BookingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingService.m; sourceTree = "<group>"; };
+		E241E6421B6099CF00105343 /* WorkspaceTypeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkspaceTypeService.h; sourceTree = "<group>"; };
+		E241E6431B6099CF00105343 /* WorkspaceTypeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkspaceTypeService.m; sourceTree = "<group>"; };
+		E241E6451B60C71800105343 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		E241E6461B60C71800105343 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
 		E268699F1B0E716200801089 /* CardType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardType.h; sourceTree = "<group>"; };
 		E26869A01B0E716200801089 /* CardType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardType.m; sourceTree = "<group>"; };
 		E26869A21B0E72F300801089 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -77,6 +90,10 @@
 		E286D5B61B45E6980009B20E /* WorkspaceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkspaceService.m; sourceTree = "<group>"; };
 		E286D5B81B4983860009B20E /* WorkspaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkspaceViewController.h; sourceTree = "<group>"; };
 		E286D5B91B4983860009B20E /* WorkspaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkspaceViewController.m; sourceTree = "<group>"; };
+		E29C144D1B60184E00A8B439 /* SubscribeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscribeViewController.h; sourceTree = "<group>"; };
+		E29C144E1B60184E00A8B439 /* SubscribeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscribeViewController.m; sourceTree = "<group>"; };
+		E2BA369C1B4A9CD30055D985 /* BookingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingViewController.h; sourceTree = "<group>"; };
+		E2BA369D1B4A9CD30055D985 /* BookingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingViewController.m; sourceTree = "<group>"; };
 		E2D9A10E1B02477200AC80B0 /* FindADesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindADesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D9A1121B02477200AC80B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2D9A1131B02477200AC80B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -107,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E234689D1B4C543E00213ADC /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +208,7 @@
 		E2D9A1051B02477200AC80B0 = {
 			isa = PBXGroup;
 			children = (
+				E234689C1B4C543E00213ADC /* MapKit.framework */,
 				E2D9A1101B02477200AC80B0 /* FindADesk */,
 				E2D9A12A1B02477200AC80B0 /* FindADeskTests */,
 				E2D9A10F1B02477200AC80B0 /* Products */,
@@ -262,6 +281,14 @@
 				E2285BC31B44A3C900EA9E02 /* WorkspaceListViewController.m */,
 				E286D5B81B4983860009B20E /* WorkspaceViewController.h */,
 				E286D5B91B4983860009B20E /* WorkspaceViewController.m */,
+				E2BA369C1B4A9CD30055D985 /* BookingViewController.h */,
+				E2BA369D1B4A9CD30055D985 /* BookingViewController.m */,
+				E23468991B4C524200213ADC /* MapViewController.h */,
+				E234689A1B4C524200213ADC /* MapViewController.m */,
+				E29C144D1B60184E00A8B439 /* SubscribeViewController.h */,
+				E29C144E1B60184E00A8B439 /* SubscribeViewController.m */,
+				E241E6451B60C71800105343 /* Annotation.h */,
+				E241E6461B60C71800105343 /* Annotation.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -278,6 +305,8 @@
 				E237ED191B433D3C00A02C1B /* BookingService.m */,
 				E286D5B51B45E6980009B20E /* WorkspaceService.h */,
 				E286D5B61B45E6980009B20E /* WorkspaceService.m */,
+				E241E6421B6099CF00105343 /* WorkspaceTypeService.h */,
+				E241E6431B6099CF00105343 /* WorkspaceTypeService.m */,
 			);
 			name = services;
 			sourceTree = "<group>";
@@ -394,6 +423,7 @@
 			files = (
 				E26869A41B0E72F300801089 /* User.m in Sources */,
 				E2D9A11A1B02477200AC80B0 /* HomeViewController.m in Sources */,
+				E2BA369E1B4A9CD30055D985 /* BookingViewController.m in Sources */,
 				E2F7921B1B1DF10100FB70A7 /* UserService.m in Sources */,
 				E23274B51B31B9AB0043245F /* Booking+JSONSerializer.m in Sources */,
 				E2D9A1171B02477200AC80B0 /* AppDelegate.m in Sources */,
@@ -401,18 +431,22 @@
 				E20F21B31B2EC57B00F6B489 /* MyBookingsListViewController.m in Sources */,
 				E2285BC41B44A3C900EA9E02 /* WorkspaceListViewController.m in Sources */,
 				E26869A11B0E716200801089 /* CardType.m in Sources */,
+				E241E6471B60C71800105343 /* Annotation.m in Sources */,
 				E20F21B61B2ECCA000F6B489 /* AuthenticationService.m in Sources */,
 				E20F21B01B2EC16B00F6B489 /* LoginViewController.m in Sources */,
 				E26869A71B0E740800801089 /* Workspace.m in Sources */,
 				E26869AB1B0E755100801089 /* Booking.m in Sources */,
 				E2D9A1141B02477200AC80B0 /* main.m in Sources */,
+				E29C144F1B60184E00A8B439 /* SubscribeViewController.m in Sources */,
 				E237ED1A1B433D3D00A02C1B /* BookingService.m in Sources */,
 				E26869AE1B0E77CB00801089 /* WorkspaceType.m in Sources */,
+				E241E6441B6099CF00105343 /* WorkspaceTypeService.m in Sources */,
 				E2FA4E361B15033000DADB6D /* Workspace+JSONSerializer.m in Sources */,
 				E2ECEDE81B1D90F600B5A69A /* CardType+JSONSerializer.m in Sources */,
 				E286D5B71B45E6980009B20E /* WorkspaceService.m in Sources */,
 				E2285BC11B448EDB00EA9E02 /* FindLocationViewController.m in Sources */,
 				E2F792181B1DEFFA00FB70A7 /* SessionManager.m in Sources */,
+				E234689B1B4C524200213ADC /* MapViewController.m in Sources */,
 				E2ECEDEB1B1D936B00B5A69A /* WorkspaceType+JSONSerializer.m in Sources */,
 				E26869B11B0F990700801089 /* User+JSONSerializer.m in Sources */,
 			);

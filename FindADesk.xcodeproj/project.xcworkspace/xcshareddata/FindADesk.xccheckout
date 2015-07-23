@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FCD0D088-D31D-46F9-AD8C-77A7C9CC76A0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C93B0A444A7EBE748DA6868B196BA7EF85C0B671</key>
+		<string>https://github.com/lienafalionel/FindADesk_iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FindADesk.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C93B0A444A7EBE748DA6868B196BA7EF85C0B671</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lienafalionel/FindADesk_iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C93B0A444A7EBE748DA6868B196BA7EF85C0B671</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C93B0A444A7EBE748DA6868B196BA7EF85C0B671</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FindADesk</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -28,6 +28,18 @@
         [json setObject:self.userId forKey:@"userId"];
     if(self.firstName)
         [json setObject:self.firstName forKey:@"firstName"];
+    if(self.lastName)
+        [json setObject:self.lastName forKey:@"lastName"];
+    if(self.address)
+        [json setObject:self.address forKey:@"address"];
+    if(self.email)
+        [json setObject:self.email forKey:@"email"];
+    if(self.password)
+        [json setObject:self.password forKey:@"password"];
+    if(self.phoneNumber)
+        [json setObject:self.phoneNumber forKey:@"phoneNumber"];
+    if(self.company)
+        [json setObject:self.company forKey:@"company"];
     return json;
 }
 

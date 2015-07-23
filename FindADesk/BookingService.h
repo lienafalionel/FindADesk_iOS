@@ -15,5 +15,7 @@
 + (instancetype)sharedInstance;
 
 - (void)getBookingWithcompletion:(NSString *)idBooking completion:(void (^)(Booking *))completion;
+- (void)createBooking:(Booking *)booking completion:(void(^)(Booking *))completion;
+- (void)createbooking:(User *)user workspace:(Workspace *)workspace begin:(NSDate *)begin end:(NSDate *)end completion:(void (^)(Booking *))completion;
 - (void)deleteBooking:(Booking *)booking completion:(void (^)(Booking *))completion;
 @end

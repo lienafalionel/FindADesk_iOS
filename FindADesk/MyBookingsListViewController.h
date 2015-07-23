@@ -10,5 +10,5 @@
 #import "User.h"
 
 @interface MyReservationsListViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate, UIAlertViewDelegate>
-@property (strong, nonatomic) User *user;
+extern User *userConnected;
 @end

@@ -10,6 +10,6 @@
 #import "User.h"
 
 @interface HomeViewController : UIViewController
-@property (strong, nonatomic) User *user;
+extern User *userConnected;
 @end
 

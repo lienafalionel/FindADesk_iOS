@@ -8,11 +8,12 @@
 
 #import "FindLocationViewController.h"
 #import "WorkspaceService.h"
+#import "WorkspaceTypeService.h"
 #import "WorkspaceListViewController.h"
 
 #define SEGUE_TO_WORKSPACE      @"SearchToWorkspace"
 
-@interface FindLocationViewController ()
+@interface FindLocationViewController () 
 @property (weak, nonatomic) IBOutlet UITextField *fieldWorkspaceType;
 @property (weak, nonatomic) IBOutlet UITextField *fieldCity;
 @property (weak, nonatomic) IBOutlet UITextField *fieldSeats;
@@ -20,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *fieldMaxPrice;
 @property (weak, nonatomic) IBOutlet UIButton *btnSearchBooking;
 @property (weak, nonatomic) WorkspaceService * workspaceService;
+@property (weak, nonatomic) WorkspaceTypeService * workspaceTypeService;
+@property (strong, nonatomic) NSArray *workspaceTypes;
 @property (strong, nonatomic) NSArray *workspaces;
 @end
 
@@ -28,7 +31,29 @@
 #pragma mark - Privates
 - (void)setupModel{
     self.workspaceService = [WorkspaceService sharedInstance];
+    self.workspaceTypeService = [WorkspaceTypeService sharedInstance];
+    /*[self.workspaceTypeService getWorkspaceTypesWithcompletion:^(NSArray *array) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.workspaceTypes = array;
+        });
+    }];
+    
+    UIPickerView* picker = [[UIPickerView alloc]init];
+    [self.fieldWorkspaceType setInputView:picker];*/
 }
+
+/*- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    return self.workspaceTypes.count;
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 1;
+}
+
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row   forComponent:(NSInteger)component
+{
+    return [[self.workspaceTypes objectAtIndex:row] label];
+}*/
 
 - (void)viewDidLoad {
     [super viewDidLoad];

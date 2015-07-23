@@ -44,6 +44,25 @@
     NSMutableDictionary *json = [@{} mutableCopy];
     if(self.bookingId)
         [json setObject:self.bookingId forKey:@"bookingId"];
+    if(self.begin) {
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
+        NSString *date = [dateFormatter stringFromDate:self.begin];
+        [json setObject:date forKey:@"begin"];
+    }
+    if(self.end) {
+        /*NSDateFormatter *dateFormatter = [NSDateFormatter new];
+        dateFormatter.dateFormat = TODO_DATE_FORMAT;
+        [json setObject:[dateFormatter stringFromDate:self.end] forKey:@"end"];*/
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
+        NSString *date = [dateFormatter stringFromDate:self.end];
+        [json setObject:date forKey:@"end"];
+    }
+    if(self.user)
+        [json setObject:self.user.toJSON forKey:@"user"];
+    if(self.workspace)
+        [json setObject:self.workspace.toJSON forKey:@"workspace"];
     return json;
 }
 

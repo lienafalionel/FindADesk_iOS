@@ -68,7 +68,7 @@
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
     if (buttonIndex == 0) {
         [self.bookingService deleteBooking:self.selectedBooking completion:^(Booking *booking) {
-            [self.userService getBookingsByUserWithcompletion:self.user.userId completion:^(NSArray *bookings) {
+            [self.userService getBookingsByUserWithcompletion:userConnected.userId completion:^(NSArray *bookings) {
                 dispatch_async(dispatch_get_main_queue(), ^{
                     self.bookings = bookings;
                     [self.tableBookings reloadData];
@@ -96,7 +96,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-    [self.userService getBookingsByUserWithcompletion:self.user.userId completion:^(NSArray *bookings) {
+    [self.userService getBookingsByUserWithcompletion:userConnected.userId completion:^(NSArray *bookings) {
         self.bookings = [bookings mutableCopy];
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.tableBookings reloadData];
@@ -120,8 +120,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:BOOKING_CELL_ID forIndexPath:indexPath];
     Booking *booking = self.bookings[indexPath.row];
-    cell.textLabel.text = booking.workspace.workspaceType.label;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@     %@€", booking.workspace.city, booking.workspace.price];
+    NSDateFormatter* fmt = [[NSDateFormatter alloc] init];
+    [fmt setDateFormat:@"dd/MM/yyyy HH:mm"];
+    NSString* dateStr = [fmt stringFromDate:booking.begin];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@                   %@", booking.workspace.workspaceType.label, dateStr];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@     %@€", booking.workspace.city, booking.price];
     return cell;
 }
 

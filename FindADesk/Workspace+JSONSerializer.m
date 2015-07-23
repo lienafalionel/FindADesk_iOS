@@ -30,7 +30,30 @@
 
 - (NSDictionary *)toJSON{
     NSMutableDictionary *json = [@{} mutableCopy];
-    
+    if(self.workspaceId)
+        [json setObject:self.workspaceId forKey:@"workspaceId"];
+    if(self.price)
+        [json setObject:self.price forKey:@"price"];
+    if(self.seatsNumber)
+        [json setObject:self.seatsNumber forKey:@"seatsNumber"];
+    if(self.desc)
+        [json setObject:self.desc forKey:@"description"];
+    if(self.userEmail)
+        [json setObject:self.userEmail forKey:@"userEmail"];
+    if(self.address)
+        [json setObject:self.address forKey:@"address"];
+    if(self.city)
+        [json setObject:self.city forKey:@"city"];
+    if(self.zipCode)
+        [json setObject:self.zipCode forKey:@"zipCode"];
+    if(self.country)
+        [json setObject:self.country forKey:@"country"];
+    if(self.longitude)
+        [json setObject:self.longitude forKey:@"longitude"];
+    if(self.latitude)
+        [json setObject:self.latitude forKey:@"latitude"];
+    if(self.workspaceType)
+        [json setObject:self.workspaceType.toJSON forKey:@"workspaceType"];
     return json;
 }
 
